@@ -1,0 +1,29 @@
+{
+  "name": "hexo-theme-prontera",
+  "version": "1.0.0",
+  "description": "A light theme for Hexo",
+  "main": "index.js",
+  "scripts": {
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinggod/hexo-theme-prontera"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "prontera"
+  ],
+  "author": "Sean Sun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinggod/hexo-theme-prontera/issues"
+  },
+  "homepage": "https://github.com/pinggod/hexo-theme-prontera#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.0.4"
+  }
+}

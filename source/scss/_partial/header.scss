@@ -1,0 +1,62 @@
+@import "./base";
+header {
+    &.feature-header {
+        @include size(100%, 70px);
+        background-color: white;
+        box-shadow: 0px 1px 5px #ccc;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        & > .nav-search-container {
+            display: flex;
+        }
+    }
+    .logo-container {
+        width: 280px;
+        text-align: center;
+    }
+    .shortcut-icons {
+        position: absolute;
+        right: 24%;
+        img.icon {
+            width: 32px;
+            height: 32px;
+            margin-left: 12px;
+            @include animate(hover, transform, scale(1.2), 0.3s);
+        }
+    }
+    .component-nav {
+        @include size(auto, 100%);
+        display: inline-block;
+        & > ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            @include size(auto, 100%);
+        }
+    }
+    .component-nav-item {
+        @include size(80px, 100%);
+        list-style: none;
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+        cursor: pointer;
+        box-sizing: border-box;
+        @include animate(hover, background-color, #f1f1f1, 0.3s);
+        & > p {
+            @include size(100%, 100%);
+            margin: 0;
+            text-align: center;
+            padding-top: 6px;
+            line-height: 70px - 6px * 2;
+            font-size: 18px;
+            box-sizing: border-box;
+            &.selected {
+                border-bottom: #FF7171 6px solid;
+            }
+        }
+    }
+}

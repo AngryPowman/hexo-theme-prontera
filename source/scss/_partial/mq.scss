@@ -1,0 +1,39 @@
+@import "base";
+
+main.container {
+    margin: 2em 10px;
+}
+
+@media screen and (min-width: $CONTENT_MIN_WIDTH) {
+    .wrap {
+        width: $CONTENT_WIDTH;
+        margin: 0 auto;
+    }
+    header {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width: $CONTENT_MIN_WIDTH) {
+    .wrap {
+        width: 100%;
+    }
+    main.container,
+    .home.post-list,
+    .archive {
+        margin-top: 0;
+    }
+    .archive .post-item {
+        padding-left: 20px;
+    }
+    .post-content {
+        h2, h3, h4, h5, h6 {
+            max-width: 300px;
+            left: 15px;
+        }
+    }
+    .ds-thread,
+    #disqus_thread {
+        margin: 2em 10px;
+    }
+}

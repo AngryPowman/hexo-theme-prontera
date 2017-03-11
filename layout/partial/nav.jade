@@ -1,0 +1,19 @@
+
+nav.component-nav
+
+    ul
+        div.logo-container
+            a(href="/")
+                h2.title= config.title
+
+        each value, key in theme.menu
+            - var re = /^(http|https):\/\/*/gi;
+            - var tar = re.test(value) ? "_blank" : "_self"
+            - var act = !re.test(value) && "/"+page.current_url === value
+            a.li.component-nav-item(href=url_for(value) target=tar)
+                p(class={selected: act})
+                    != key.toUpperCase()
+        ul.shortcut-icons
+            each nav_item in theme.nav_icons
+                a(href=nav_item[1] target="_blank")
+                    img.icon(src=nav_item[0])

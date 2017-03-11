@@ -1,0 +1,26 @@
+.archive {
+    max-width: $CONTENT_WIDTH;
+    margin: 5em auto;
+    .post-item {
+        padding: 2px 0 0 50px;
+    }
+    .post-time,
+    .post-title-link {
+        font-size: 1rem;
+    }
+    .post-title-link {
+        display: block;
+        margin-left: 125px;
+        color: $MAIN_COLOR;
+        word-break: break-all;
+        @include animate(hover, color, $MAIN_COLOR - 80, 0.3s);
+        &:hover {
+            border-bottom: 0;
+        }
+    }
+    .post-info {
+        float: left;
+        width: 125px;
+        color: #7f8c8d;
+    }
+}
