@@ -55,7 +55,7 @@ header {
             font-size: 18px;
             box-sizing: border-box;
             &.selected {
-                border-bottom: #FF7171 6px solid;
+                border-bottom: $MAIN_COLOR 6px solid;
             }
         }
     }
