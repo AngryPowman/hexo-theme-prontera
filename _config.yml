@@ -2,14 +2,21 @@
 menu:
     主页: /
     归档: /archives/
+    关于我: /about.html
 
 # Nav Shortcut Icons
 nav_icons:
     - ['/images/github.svg', 'https://github.com/AngryPowman']
     - ['/images/rss.svg', '/atom.xml']
 
-
 favicon: /favicon.ico
+
+# About
+about_info:
+    name: "愤怒的泡面"
+    bio: "十年饮冰·难凉热血"
+    avatar: "/images/avatar.png"
+
 
 # Comment
 # e.g disqus: seansun

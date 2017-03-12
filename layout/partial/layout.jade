@@ -5,11 +5,11 @@ html(lang=config.language)
     body
         header.feature-header
             include nav
-
-        .wrap
-            main.container
-                block container
-            footer
-                block pagination
-                block copyright
+        main.container
+            block container
+        footer.footer-container
+            block pagination
+            block copyright
         include scripts
+
+

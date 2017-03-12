@@ -8,13 +8,14 @@ block description
     meta(name="description", content=desc)
 
 block container
-    include mixins/post
-    +post(page)
+    div#post-container
+        include mixins/post
+        +post(page)
+        include partial/comment
 
 block pagination
     include mixins/paginator
     +post()
-    include partial/comment
 
 block copyright
     include partial/copyright

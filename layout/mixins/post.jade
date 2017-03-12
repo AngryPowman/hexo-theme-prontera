@@ -6,9 +6,9 @@ mixin postInfo(item)
 
 //- Index Page
 mixin posts()
-    ul.home.post-list
+    .home.post-list
         - page.posts.each(function (item) {
-            li.post-list-item
+            .post-list-item
                 article.post-block
                     h2.post-title
                         a.post-title-link(href= url_for(item.path))

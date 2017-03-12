@@ -1,0 +1,30 @@
+#about {
+    padding-top: 50px;
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+    .info {
+        .title {
+            font-size: 18px;
+        }
+        .url {
+            color: #666666;
+            font-size: 16px;
+            font-weight: 200;
+        }
+        .bio {
+            padding-top: 14px;
+            font-size: 15px;
+            font-weight: 200;
+            color: #777777;
+        }
+    }
+    .avatar {
+        float: right;
+        margin-left: 50px;
+        border-radius: 100%;
+        border: 3px solid #F2F5F7;
+        width: 86px;
+        height: 86px;
+    }
+}

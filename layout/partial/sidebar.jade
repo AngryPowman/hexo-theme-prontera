@@ -1,0 +1,10 @@
+div#about
+  - var about_info = theme.about_info
+  div.info
+    .title= about_info.name
+    .url= config.url
+    .bio= about_info.bio
+  img.avatar(src=about_info.avatar)
+
+div#stat
+  
