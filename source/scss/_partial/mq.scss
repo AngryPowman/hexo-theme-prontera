@@ -6,6 +6,7 @@
         &.left {
             float: left;
             width: 62%;
+            min-width: 350px;
         }
     }
     #sidebar {
@@ -26,21 +27,39 @@
     clear: both;
 }
 
-@media screen and (min-width: $CONTENT_MIN_WIDTH) {
-    #body-container {
-        width: $CONTENT_WIDTH;
-        margin: 0 auto;
-    }
+@media screen and (min-device-width: 120px) and (max-device-width: 480px) {
     header {
-        padding: 20px 100px;
+        &.feature-header {
+            padding: 0;
+            width: 100%;
+        }
+        .logo-container {
+            display: none;
+        }
+        .shortcut-icons {
+            display: none;
+        }
     }
-}
-
-@media screen and (max-width: $CONTENT_MIN_WIDTH) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     #body-container {
         width: 100%;
+        margin: 0 auto;
+        #post-list {
+            &.left {
+                width: 100%;
+            }
+        }
+        #sidebar {
+            display: none;
+        }
     }
-    main.container,
+    #post-container {
+        width: 100%;
+        // margin: 0 auto;
+    }
     .home.post-list,
     .archive {
         margin-top: 0;
@@ -58,8 +77,44 @@
             left: 15px;
         }
     }
-    .ds-thread,
-    #disqus_thread {
-        margin: 2em 10px;
+    code {
+        word-break: break-all;
     }
 }
+
+// @media screen and (min-width: 350px) {
+//     #body-container {
+//         width: min-width;
+//         margin: 0 auto;
+//     }
+//     header {
+//         padding: 20px 100px;
+//     }
+// }
+// @media screen and (max-width: $CONTENT_MAX_WIDTH) {
+//     #body-container {
+//         width: min-width;
+//     }
+//     main.container,
+//     .home.post-list,
+//     .archive {
+//         margin-top: 0;
+//     }
+//     .archive .post-item {
+//         padding-left: 20px;
+//     }
+//     .post-content {
+//         h2,
+//         h3,
+//         h4,
+//         h5,
+//         h6 {
+//             max-width: 300px;
+//             left: 15px;
+//         }
+//     }
+//     .ds-thread,
+//     #disqus_thread {
+//         margin: 2em 10px;
+//     }
+// }
