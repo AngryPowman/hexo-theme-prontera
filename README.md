@@ -2,6 +2,9 @@
 A light theme for Hexo.
 Online Demo: http://powman.org
 
+[image:https://raw.githubusercontent.com/AngryPowman/hexo-theme-prontera/master/doc/image/snapshot.png]
+
+
 ## Theme Features
 - Custom Navigation Menu
 * Custom Shortcut Icons
