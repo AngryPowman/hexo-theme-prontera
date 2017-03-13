@@ -2,10 +2,6 @@
 A light theme for Hexo.
 Online Demo: http://powman.org
 
-## hexo-theme-prontera
-A light theme for Hexo.
-Online Demo: http://powman.org
-
 ![](https://raw.githubusercontent.com/AngryPowman/hexo-theme-prontera/master/doc/image/snapshot.png)
 
 ## Theme Features
