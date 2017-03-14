@@ -3,41 +3,34 @@ favicon: /favicon.ico
 
 # Nav Menus
 menu:
-    主页: /
-    归档: /archives
-    留言板: /feedback
-    关于我: /about
+    Index: /
+    Archives: /archives
 
 # Nav Shortcut Icons
 nav_icons:
     - ['/images/github.svg', 'https://github.com/AngryPowman']
-    - ['/images/zhihu.svg', 'https://www.zhihu.com/people/AngryPowman']
     - ['/images/rss.svg', '/atom.xml']
 
 # Friend Links
 friend_links:
-    - ['44670[PG]', '', 'http://44670.org']
-    - ['Naylon', '', 'http://naylon.0ginr.com']
-    - ['ChiChou', '', 'https://blog.chichou.me']
-    - ['Zapline', '', 'http://www.cnblogs.com/zapline']
-    - ['Latyas', '', 'https://yangjie.li']
+    - ['AngryPowman', 'This is a link', 'http://powman.org']
+    - ['Demo Links', 'You can change this in your theme config', 'http://powman.org']
 
 
 # About
 about_info:
-    name: "愤怒的泡面"
+    name: "AngryPowman"
     bio: "十年饮冰·难凉热血"
     avatar: "/images/avatar.png"
 
-
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: angrypowman
 duoshuo: angrypowman
 
 # Analytics
-# google_analytics: UA-65933410-1
-tencent_analytics: 27319631
+google_analytics: angrypowman
+tencent_analytics: 
  
 # Copyright Infomation
 startyear: 2017

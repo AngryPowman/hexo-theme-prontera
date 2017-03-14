@@ -13,9 +13,34 @@ Online Demo: http://powman.org
 * Supported `Duoshuo Comment` and `disqus`
 * Supproted `Google Analytics` and `Tencent Analytics`
 
+## Dependencies
+- hexo-renderer-jade
+- hexo-generator-feed
+
 ## Installation
 ### Install
-`git clone https://github.com/AngryPowman/hexo-theme-prontera themes/prontera`
+
+#### Init Hexo
+Once Hexo is installed, run the following commands to initialise Hexo in the target <folder>.
+```bash
+$ hexo init <folder>
+$ cd <folder>
+$ npm install
+```
+**For more detail on Hexo official website: https://hexo.io/docs/setup.html**
+
+#### Install Dependencies
+Theme `Prontera` is using `Jade` for its templates.
+```bash
+$ npm install hexo-renderer-jade --save
+$ npm install hexo-generator-feed --save
+```
+
+#### Install Theme
+Clone theme from Github:
+```bash
+$ git clone https://github.com/AngryPowman/hexo-theme-prontera themes/prontera
+```
 
 ### Using
 Change your theme config `_config.yml` to `prontera`  on the root of your Hexo directory:
@@ -26,22 +51,10 @@ Change your theme config `_config.yml` to `prontera`  on the root of your Hexo d
 theme: prontera
 ```
 
-### Plugin Dependencies
-To use this theme for your Hexo blog, you may install `hexo-generator-archive` and add the configuration to your `_config.yml` on the root as follows: 
-```yaml
-# Show all articles on archive page
-archive_generator:
-    per_page: 0
-    yearly: false
-    monthly: true
-    daily: false
-```
-
 ## Change theme style
 You can just change the constant `$MAIN_COLOR` in `themes/prontera/source/scss/_partial/base.scss` to change the basic color.
 
 **NOTICE**: Do remember to run `gulp`  after you modify a scss file.
-
 
 ## License
 MIT

@@ -37,7 +37,7 @@ header {
         }
     }
     .component-nav-item {
-        @include size(80px, 100%);
+        @include size(110px, 100%);
         list-style: none;
         padding: {
             left: 10px;
