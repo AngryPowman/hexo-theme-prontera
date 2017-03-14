@@ -1,5 +1,13 @@
-#about {
-    padding-top: 50px;
+@import "base";
+.panel-title {
+    border-left: 3px solid $MAIN_COLOR;
+    p {
+        padding-left: 10px;
+        // background: $MAIN_COLOR + 150;
+    }
+}
+
+#about-panel {
     display: flex;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
@@ -26,5 +34,33 @@
         border: 3px solid #F2F5F7;
         width: 86px;
         height: 86px;
+    }
+}
+
+#friend-links-panel {
+    padding-top: 10px;
+    width: 100%;
+    display: inline-block;
+    a.link-item {
+        .link-container {
+            padding: 10px;
+            .site-name {
+                color: $MAIN_COLOR;
+            }
+            .site-url {
+                font-size: 12px;
+                padding-left: 10px;
+                font-weight: 200;
+                color: #aaa;
+            }
+            .site-desc {
+                font-weight: 200;
+                color: #666;
+                font-size: 14px;
+            }
+            &:hover {
+                background: #F2F5F7;
+            }
+        }
     }
 }

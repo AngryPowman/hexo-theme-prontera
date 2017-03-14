@@ -1,6 +1,3 @@
-//- LaTex
-script(async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous")
-
 //- Analytics tracking
 - var ga = theme.google_analytics
 - var ta = theme.tencent_analytics
@@ -13,3 +10,30 @@ if ga
 
 if ta
     script(async src="http://tajs.qq.com/stats?sId=" + ta  charset="UTF-8")
+
+if theme.duoshuo
+    script.
+        var duoshuoQuery = {short_name:"#{theme.duoshuo}"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+
+
+if theme.disqus
+    #disqus_thread
+    script.
+        var disqus_shortname = '#{theme.disqus}';
+        var disqus_identifier = '#{page.path}';
+        var disqus_title = '#{page.title}';
+        var disqus_url = '#{config.url}/#{page.path}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)

@@ -1,10 +1,19 @@
-div#about
-  - var about_info = theme.about_info
+div#about-panel
+  - var about_info = theme.about_info;
   div.info
     .title= about_info.name
     .url= config.url
     .bio= about_info.bio
   img.avatar(src=about_info.avatar)
 
-div#stat
-  
+
+div#friend-links-panel
+  div.panel-title
+    p= __('friend_link')
+  - var friend_links = theme.friend_links;
+  each link in friend_links
+    a.link-item(href=link[2] target="_blank")
+        div.link-container
+          .site-name
+            = link[0] 
+          .site-desc= link[1]

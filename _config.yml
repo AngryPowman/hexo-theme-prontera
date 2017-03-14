@@ -1,15 +1,27 @@
+favicon: /favicon.ico
+
+
 # Nav Menus
 menu:
     主页: /
-    归档: /archives/
-    关于我: /about.html
+    归档: /archives
+    留言板: /feedback
+    关于我: /about
 
 # Nav Shortcut Icons
 nav_icons:
     - ['/images/github.svg', 'https://github.com/AngryPowman']
+    - ['/images/zhihu.svg', 'https://www.zhihu.com/people/AngryPowman']
     - ['/images/rss.svg', '/atom.xml']
 
-favicon: /favicon.ico
+# Friend Links
+friend_links:
+    - ['44670[PG]', '', 'http://44670.org']
+    - ['Naylon', '', 'http://naylon.0ginr.com']
+    - ['ChiChou', '', 'https://blog.chichou.me']
+    - ['Zapline', '', 'http://www.cnblogs.com/zapline']
+    - ['Latyas', '', 'https://yangjie.li']
+
 
 # About
 about_info:

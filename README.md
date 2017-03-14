@@ -2,13 +2,15 @@
 A light theme for Hexo.
 Online Demo: http://powman.org
 
-[image:https://raw.githubusercontent.com/AngryPowman/hexo-theme-prontera/master/doc/image/snapshot.png]
+![](https://raw.githubusercontent.com/AngryPowman/hexo-theme-prontera/master/doc/image/snapshot.png)
 
 ## Theme Features
 - Custom Navigation Menu
 * Custom Shortcut Icons
 * Archive List
 * ABOUT Information on Index
+* Multi-Language Support
+* Links
 * Supported `Duoshuo Comment` and `disqus`
 * Supproted `Google Analytics` and `Tencent Analytics`
 
