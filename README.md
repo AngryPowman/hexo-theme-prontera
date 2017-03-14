@@ -2,7 +2,7 @@
 A light theme for Hexo.
 Online Demo: http://powman.org
 
-![](https://raw.githubusercontent.com/AngryPowman/hexo-theme-prontera/master/doc/image/snapshot.png)
+![](https://raw.githubusercontent.com/AngryPowman/hexo-theme-prontera/master/doc/image/snapshot.png?79610d5)
 
 ## Theme Features
 - Custom Navigation Menu
