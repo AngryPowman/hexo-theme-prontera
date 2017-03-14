@@ -8,8 +8,7 @@ Online Demo: http://powman.org
 - Custom Navigation Menu
 * Custom Shortcut Icons
 * Archive List
-* ABOUT Information on Index
-* Multi-Language Support
+* ABOUT Information
 * Links
 * Supported `Duoshuo Comment` and `disqus`
 * Supproted `Google Analytics` and `Tencent Analytics`
