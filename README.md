@@ -1,4 +1,17 @@
-## hexo-theme-prontera
+:warning:
+fork from [AngryPowman/hexo-theme-prontera](https://github.com/AngryPowman/hexo-theme-prontera)
+
+修改了css 配色
+
+修改后如下
+
+![](doc/image/snapshot_abao.png)
+
+:warning:以下为原文
+
+-------
+
+## hexo-theme-prontera	
 A light theme for Hexo.
 Online Demo: http://powman.org
 
