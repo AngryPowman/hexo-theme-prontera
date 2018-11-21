@@ -25,7 +25,10 @@ about_info:
 
 # Comment
 # e.g disqus: seansun
-disqus: angrypowman
+disqus:
+  enable: true
+  shortname: chenguu #your name
+  count: true
 duoshuo: 
 
 # Analytics
