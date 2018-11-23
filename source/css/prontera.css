@@ -1091,11 +1091,12 @@ table tbody td {
   overflow-x: hidden;
   overflow-y: auto;
   max-width: 60%; }
-#list .listItem {
+
+.listItem {
   position: relative;
   padding-left: 40px;
   padding-top: 4px; }
-#list .listItem:before {
+.listItem:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -1105,19 +1106,19 @@ table tbody td {
   height: 100%;
   border-right: 2px solid #49b1f5;
   z-index: 1; }
-#list .listItem:after {
+.listItem:after {
   content: "";
   display: inline-block;
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #e0e0e0;
+  background-color: #fff;
   border-radius: 4px;
   left: 18px;
   top: 50%;
   margin-top: -4px;
   z-index: 1; }
-#list .listItem .article-sort-title:after {
+.listItem.article-sort-title:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1129,11 +1130,11 @@ table tbody td {
   box-shadow: 0 0 0 3px #3d93fd;
   margin-top: -7px;
   z-index: 2; }
-#list .listItem .article-sort-title:hover:after, #list .listItem .highlight:hover:after, #list .listItem .article-sort-year:hover:after {
+.listItem.article-sort-title:hover:after {
   background-color: #e0e0e0;
   border: 4px solid #ff7242;
   box-shadow: 0 0 0 3px #ff7242; }
-#list .listItem .article-sort-year:after {
+.listItem.article-sort-year:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1145,7 +1146,11 @@ table tbody td {
   box-shadow: 0 0 0 3px #3d93fd;
   margin-top: -6px;
   z-index: 2; }
-#list .listItem .highlight:after {
+.listItem.article-sort-year:hover:after {
+  background-color: #e0e0e0;
+  border: 4px solid #ff7242;
+  box-shadow: 0 0 0 3px #ff7242; }
+.listItem.itemContent:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1157,10 +1162,14 @@ table tbody td {
   box-shadow: 0 0 0 3px #3d93fd;
   margin-top: -4px;
   z-index: 2; }
-#list .listItem .highlight:hover > .listItemContent {
-  background-color: #edf2f4;
+.listItem.itemContent:hover:after {
+  background-color: #e0e0e0;
+  border: 4px solid #ff7242;
+  box-shadow: 0 0 0 3px #ff7242; }
+.listItem.itemContent:hover .listItemContent {
+  background-color: #f3ffbd;
   color: #ef233c; }
-#list .listItem .highlight:hover .listItemContent-date {
+.listItem.itemContent:hover .listItemContent-date {
   color: #2b2d42; }
 
 .listItemTitle {

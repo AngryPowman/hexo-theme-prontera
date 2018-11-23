@@ -1,12 +1,13 @@
 mixin articleSort(posts)
-    .article-sort
-        - var year
-        - posts.each(function(article){
-            - var tempYear=date(article.date,'YYYY')
-            if tempYear!=year
-                - year=tempYear
-                .article-sort-item.year=year
-            .article-sort-item
-                time.article-sort-item_time=date(article.date)
-                a.article-sort-item_title(href=url_for(article.path) target="_blank")=article.title || 'No Title'
-        - })
+    - var year
+    - posts.each(function(article){
+        - var tempYear=date(article.date,'YYYY')
+        if tempYear!=year
+            - year=tempYear
+            .listItem.article-sort-year
+                .listItemYear=year
+            .listItem.itemContent
+                .listItemContent
+                    time.listItemContent-date=date(article.date)
+                    a.listItemContent-content(href=url_for(article.path) target="_blank")=article.title || 'No Title'
+    - })

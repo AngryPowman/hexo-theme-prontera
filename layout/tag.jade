@@ -1,8 +1,9 @@
 extends  partial/layout
 block container
-    include mixins/tags
-    #tag
-        .article-sort-title='Tag -'+page.tag
+    #list
+        .listItem.article-sort-title
+            .listItemTitle='Tag -'+page.tag
+        include mixins/tags
         +articleSort(page.posts)
 
 block pagination
