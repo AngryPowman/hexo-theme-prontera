@@ -960,12 +960,15 @@ table tbody td {
 #about-panel {
   display: flex;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  position: relative; }
+#about-panel .info {
+  max-width: calc(100% - 92px); }
 #about-panel .info .title {
   font-size: 18px; }
 #about-panel .info .url {
   color: #666666;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 200; }
 #about-panel .info .bio {
   padding-top: 14px;
@@ -974,6 +977,8 @@ table tbody td {
   color: #777777; }
 #about-panel .avatar {
   float: right;
+  position: absolute;
+  right: 0;
   margin-left: 50px;
   border-radius: 100%;
   border: 3px solid #F2F5F7;
