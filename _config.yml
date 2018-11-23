@@ -5,6 +5,8 @@ favicon: /favicon.ico
 menu:
     Index: /
     Archives: /archives
+    Categories: /categories
+    Tags: /tags
 
 # Nav Shortcut Icons
 nav_icons:
