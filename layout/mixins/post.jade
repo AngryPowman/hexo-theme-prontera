@@ -46,3 +46,29 @@ mixin post(item)
             .post-content
                 != item.content
 
+//- Tags Page
+mixin tagList()
+    ul.tag
+        - site.tags.each(function(item){
+            - var tagCount="("+item.length+")"
+            //- console.log(item.posts)
+            li
+                a.tag-link(href=url_for(item.path))
+                    !=item.name
+                span.tag_amount=tagCount
+        - })
+//- Categories Page
+mixin categoryList()
+     .category-lists
+                     .category_title= page.title  
+                         |  - 
+                         span.category_amount= site.categories.length
+                     ul.categories
+                         - site.categories.each(function(item){
+                             //- console.log(item)
+                             - var postCount='('+item.length+')'
+                             li.category
+                                 a.category_title_link(href=url_for(item.path))
+                                     !=item.name
+                                 span.category_amount=postCount
+                         - })

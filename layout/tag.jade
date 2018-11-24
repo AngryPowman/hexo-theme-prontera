@@ -1,0 +1,14 @@
+extends  partial/layout
+block container
+    #list
+        .listItem.article-sort-title
+            .listItemTitle='Tag -'+page.tag
+        include mixins/tags
+        +articleSort(page.posts)
+
+block pagination
+    include mixins/paginator
+    +home()
+
+block copyright
+    include partial/copyright

@@ -1,0 +1,15 @@
+extends  partial/layout
+block container
+    div#body-container
+        if page.type=="tags"
+            include mixins/post
+            +tagList()
+        else if page.type === 'categories'
+           include mixins/post
+           +categoryList()
+block pagination
+    include mixins/paginator
+    +home()
+
+block copyright
+    include partial/copyright

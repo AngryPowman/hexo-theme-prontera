@@ -1,0 +1,13 @@
+mixin articleSort(posts)
+    - var year
+    - posts.each(function(article){
+        - var tempYear=date(article.date,'YYYY')
+        if tempYear!=year
+            - year=tempYear
+            .listItem.article-sort-year
+                .listItemYear=year
+            .listItem.itemContent
+                .listItemContent
+                    time.listItemContent-date=date(article.date)
+                    a.listItemContent-content(href=url_for(article.path) target="_blank")=article.title || 'No Title'
+    - })

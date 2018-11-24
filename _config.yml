@@ -5,10 +5,12 @@ favicon: /favicon.ico
 menu:
     Index: /
     Archives: /archives
+    Categories: /categories
+    Tags: /tags
 
 # Nav Shortcut Icons
 nav_icons:
-    - ['/images/github.svg', 'https://github.com/AngryPowman']
+    - ['/images/github.svg', 'https://github.com/ChengUU']
     - ['/images/rss.svg', '/atom.xml']
 
 # Friend Links
@@ -19,18 +21,21 @@ friend_links:
 
 # About
 about_info:
-    name: "AngryPowman"
-    bio: "十年饮冰·难凉热血"
+    name: "ChengXX"
+    bio: "富贵必从勤苦得，男儿须读五车书"
     avatar: "/images/avatar.png"
 
 # Comment
 # e.g disqus: seansun
-disqus: angrypowman
+disqus:
+  enable: true
+  shortname: chenguu #your name
+  count: true
 duoshuo: 
 
 # Analytics
-google_analytics: angrypowman
-tencent_analytics: 
+google_analytics: 
+tencent_analytics: 66115146
  
 # Copyright Infomation
 startyear: 2017
