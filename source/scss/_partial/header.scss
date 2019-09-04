@@ -27,7 +27,7 @@ header {
         }
     }
     .component-nav {
-        @include size(auto, 100%);
+        @include size(100%, 100%);
         display: inline-block;
         & > ul {
             display: flex;
